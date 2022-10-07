@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
   <head>
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/style-BEM.css" />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studio</title>
+    <title>Studio - BEM</title>
   </head>
 
   <body>
-    <header class="header__container">
+    <header class="header">
       <div class="container">
         <div class="header__content">
-          <a class="logo" href="index.html"><span class="logo-accent">Web</span>Studio</a>
+          <a class="header__logo" href="index.html"
+            ><span class="header__logo header__logo--accent">Web</span>Studio</a
+          >
           <nav>
-            <ul class="navigation__content">
+            <ul class="navigation">
               <li class="navigation__item">
                 <a class="navigation__link" href="index.html">Agencja</a>
-                <div class="navigation__link__underline-active"></div>
+                <div class="navigation__link navigation__link--active"></div>
               </li>
 
               <li class="navigation__item">
@@ -30,21 +32,18 @@
             </ul>
           </nav>
           <div class="contact-links">
-            <div class="contact-links--item">
-              <svg class="icon-contact--phone">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              <a class="navigation__link navigation__link--contact" href="tel:+48111111111"
-                >+48 111 111 111</a
-              >
-            </div>
-            <div class="contact-links--item">
-              <svg class="icon-contact--mail">
+            <div class="contact-links__item">
+              <svg width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-              <a class="navigation__link navigation__link--contact" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="contact-links__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+
+            <div class="contact-links__item">
+              <svg width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <a class="contact-links__link" href="tel:+48111111111">+48 111 111 111</a>
             </div>
           </div>
         </div>
