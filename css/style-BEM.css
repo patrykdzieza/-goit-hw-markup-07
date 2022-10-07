@@ -20,6 +20,7 @@
 }
 h1,
 h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -211,3 +212,50 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ---------Section - Hero End------------ */
+
+/* Section 1 */
+
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-section__content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  padding: 0;
+}
+
+.features-section__item {
+  list-style: none;
+}
+
+.card{
+    margin:0;
+}
+
+.card__body{
+    margin-top:30px;
+}
+.card__title {
+    font-weight: var(--textBold);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+
+
+
+
+  .card__text {
+    color: var(--secondaryTextGray);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  
