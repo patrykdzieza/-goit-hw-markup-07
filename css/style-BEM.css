@@ -7,6 +7,7 @@
   --primaryButtonText: #fff;
   --hover: #2196f3;
   --secondaryTextGray: #757575;
+  --overlayTextWhite: #fff;
   --primaryText: #212121;
   --icon-gray: #afb1b8;
   --lightgray: #f5f4fa;
@@ -215,12 +216,11 @@ body {
 
 /* Section 1 */
 
-.features-section {
+.section {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
-.features-section__content {
+.section__content {
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -228,34 +228,65 @@ body {
   padding: 0;
 }
 
-.features-section__item {
+.section__item {
   list-style: none;
 }
 
-.card{
-    margin:0;
+.section__title {
+  font-weight: var(--textBold);
+  color: var(--primaryText);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
 }
 
-.card__body{
-    margin-top:30px;
+.card {
+  margin: 0;
+}
+
+.card__body {
+  margin-top: 30px;
 }
 .card__title {
-    font-weight: var(--textBold);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-  }
+  font-weight: var(--textBold);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
 
+.card__text {
+  color: var(--secondaryTextGray);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
 
+.card__overlay {
+  position: relative;
+  bottom: 73px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--overlayTextWhite);
+}
 
+.card__overlay-text {
+  padding-bottom: 27px;
+  padding-top: 27px;
+  font-weight: var(--textBold);
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* ---------Section 1 - End------------ */
 
-  .card__text {
-    color: var(--secondaryTextGray);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-  }
-  
+/* Section 2 */
