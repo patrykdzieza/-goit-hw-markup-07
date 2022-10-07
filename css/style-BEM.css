@@ -9,11 +9,16 @@
   --secondaryTextGray: #757575;
   --overlayTextWhite: #fff;
   --primaryText: #212121;
-  --icon-gray: #afb1b8;
-  --lightgray: #f5f4fa;
-  --background: #fff;
+
+  --sectionSecondaryBackground: #f5f4fa;
+  --sectionPrimaryBackground: #fff;
+  --cardBodyBackground: #fff;
   --heroBackground: #2f303a;
   --heroTextWhite: #fff;
+  --cardIconFill: #afb1b8;
+  --cardIconHoverFill: #fff;
+  --cardIconBackground: #fff;
+  --cardIconHoverBackground: #2196f3;
   --textBold: 700;
   --white: #fff;
   --overlay-background: rgba(33, 150, 243, 0.9);
@@ -218,6 +223,7 @@ body {
 
 .section {
   padding-top: 94px;
+  background-color: var(--sectionPrimaryBackground);
 }
 
 .section__content {
@@ -242,13 +248,51 @@ body {
   padding-bottom: 50px;
 }
 
+.section--gray-background {
+  background-color: var(--sectionSecondaryBackground);
+}
 .card {
   margin: 0;
+  background-color: var(--cardBodyBackground);
 }
-
+.card--rounded-with-shadow {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .card__body {
   margin-top: 30px;
 }
+
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 18px;
+}
+
+.card__social-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cardIconBackground);
+  border-radius: 50%;
+  border: none;
+  fill: var(--cardIconFill);
+  cursor: pointer;
+}
+
+.card__social-icon:hover,
+.card__social-icon:focus {
+  background-color: var(--cardIconHoverBackground);
+  fill: var(--cardIconHoverFill);
+  transition: var(--transition-cubic);
+}
+
 .card__title {
   font-weight: var(--textBold);
   font-size: 14px;
@@ -257,7 +301,15 @@ body {
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-
+.card__title--medium {
+  color: var(--primaryText);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
 .card__text {
   color: var(--secondaryTextGray);
   font-weight: 400;
@@ -265,7 +317,11 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
+.card__text--medium {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
 .card__overlay {
   position: relative;
   bottom: 73px;
