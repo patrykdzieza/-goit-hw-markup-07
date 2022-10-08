@@ -9,15 +9,22 @@
   --secondaryTextGray: #757575;
   --overlayTextWhite: #fff;
   --primaryText: #212121;
-
+  --headerBorder: #f5f4fa;
   --sectionSecondaryBackground: #f5f4fa;
   --sectionPrimaryBackground: #fff;
   --sectionIconFill: #afb1b8;
-  --cardBodyBackground: #fff;
+
+  --filtersButton: #f5f4fa;
+  --filtersButtonHover: #2196f3;
+  --filtersButtonTextColor: #212121;
+  --filtersButtonTextColorHover: #fff;
+  --filtersButtonShadowHover: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   --heroBackground: #2f303a;
   --heroTextWhite: #fff;
-  --cardIconFill: #afb1b8;
 
+  --cardIconFill: #afb1b8;
+  --cardBodyBackground: #fff;
   --cardIconHoverFill: #fff;
   --cardIconBackground: #fff;
   --cardIconHoverBackground: #2196f3;
@@ -77,7 +84,7 @@ body {
 
 /* Header Start */
 .header {
-  border-bottom: 1px solid var(--lightgray);
+  border-bottom: 1px solid var(--headerBorder);
 }
 
 .container {
@@ -779,5 +786,41 @@ input:checked {
 
 .custom-checkbox__button:hover {
   background-color: var(--checkboxButtonHover);
+  transition: var(--transition-cubic);
+}
+
+/* Filters Section */
+
+.filters-section {
+  padding-top: 94px;
+}
+.filters-section__content {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filters-section__item {
+  list-style: none;
+}
+
+.filters-section__button {
+  border-style: none;
+  background-color: var(--filtersButton);
+  color: var(--filtersButtonTextColor);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+}
+
+.filters-section__button:hover {
+  background-color: var(--filtersButtonHover);
+  color: var(--filtersButtonTextColorHover);
+  box-shadow: var(--filtersButtonShadowHover);
   transition: var(--transition-cubic);
 }

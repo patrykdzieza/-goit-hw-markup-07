@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio - BEM</title>
   </head>
   <body>
     <header class="header">
@@ -18,11 +18,10 @@
             <ul class="navigation">
               <li class="navigation__item">
                 <a class="navigation__link" href="index.html">Agencja</a>
-                <div class="navigation__link navigation__link--active"></div>
               </li>
-
               <li class="navigation__item">
                 <a class="navigation__link" href="portfolio.html">Portfolio</a>
+                <div class="navigation__link navigation__link--active"></div>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#">Kontakt</a>
@@ -48,22 +47,22 @@
       </div>
     </header>
 
-    <section class="section__filters">
-      <ul class="section-1-col__content">
-        <li class="section-1-col__item">
-          <button class="button__secondary button__secondary--light-text" type="">Wszystkie</button>
+    <section class="filters-section">
+      <ul class="filters-section__content">
+        <li class="filters-section__item">
+          <button class="filters-section__button" type="">Wszystkie</button>
         </li>
-        <li class="section-1-col__item">
-          <button class="button__secondary button__secondary--light-text" type="">Strony</button>
+        <li class="filters-section__item">
+          <button class="filters-section__button" type="">Strony</button>
         </li>
-        <li class="section-1-col__item">
-          <button class="button__secondary button__secondary--light-text" type="">Aplikacje</button>
+        <li class="filters-section__item">
+          <button class="filters-section__button" type="">Aplikacje</button>
         </li>
-        <li class="section-1-col__item">
-          <button class="button__secondary button__secondary--light-text" type="">Dizajn</button>
+        <li class="filters-section__item">
+          <button class="filters-section__button" type="">Dizajn</button>
         </li>
-        <li class="section-1-col__item">
-          <button class="button__secondary button__secondary--light-text" type="">Marketing</button>
+        <li class="filters-section__item">
+          <button class="filters-section__button" type="">Marketing</button>
         </li>
       </ul>
     </section>
