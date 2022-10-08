@@ -1,0 +1,91 @@
+@import '../utils/vars';
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .contact-form__tittle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  
+  .contact-form__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact-form__item {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+  }
+  
+  .contact-form__label {
+    font-size: 12px;
+    font-weight: 400;
+    color: $contactformLabel;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+  
+  .contact-form__input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-form__input-container:focus-within,
+  .contact-form__input-container:hover {
+    fill: $inputBorderFocus;
+    transition: $transition-cubic;
+  }
+  
+  .contact-form__input-field {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    border: 1px solid $inputPrimaryBorder;
+    border-radius: 4px;
+    padding-left: 42px;
+    font-size: 14px;
+  }
+  
+  .contact-form__icon {
+    position: absolute;
+    z-index: 1;
+    padding-left: 15px;
+  }
+  
+  .contact-form__input-field-comment {
+    height: 120px;
+    width: 100%;
+    padding-left: 42px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid $inputPrimaryBorder;
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    text-align: left;
+    resize: none;
+  }
+  
+  .contact-form__input-field:focus-within,
+  .contact-form__input-field:hover,
+  .contact-form__input-field-comment:focus-within,
+  .contact-form__input-field-comment:hover {
+    border: 1px solid $inputBorderFocus;
+    border-radius: 4px;
+    outline: $inputBorderFocus;
+    transition: $transition-cubic;
+  }

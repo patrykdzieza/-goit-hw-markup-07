@@ -1,4 +1,36 @@
-.header{
-    border-bottom: 1px solid #111;
-    background-color: #111;
-}
+@import '../utils/vars';
+
+.header {
+   border-bottom: 1px solid $headerBorder;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 1200px;
+  }
+  
+  .header__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+  }
+  
+ 
+  .header__logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: $textBold;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $logoPrimary;
+    text-decoration: none;
+  }
+  
+  .header__logo--accent {
+    color: $logoSecondary;
+  }
