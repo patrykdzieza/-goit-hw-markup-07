@@ -510,6 +510,11 @@ body {
   color: var(--footerSecondaryText);
 }
 
+.footer__input-field:focus-within {
+  outline: var(--inputBorderFocus);
+  border: 1px solid var(--inputBorderFocus);
+  transition: var(--transition-cubic);
+}
 .footer__button {
   display: flex;
   border-style: none;
