@@ -355,37 +355,39 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__item">
-            <a class="logo--light" href="index.html"><span class="logo-accent">Web</span>Studio</a>
-            <address class="footer-column">
+            <a class="footer__logo" href="index.html"
+              ><span class="footer__logo-accent">Web</span>Studio</a
+            >
+            <address class="footer__adress-column">
               <p class="footer__text">m. Warszawa, Aleje Jerozolimskie 21</p>
 
-              <a class="footer__text footer__text--contact" href="tel:+48111111111">
-                +48 111 111 111</a
-              >
               <a class="footer__text footer__text--contact" href="mailto:info@devstudio.com">
                 info@devstudio.com</a
+              >
+              <a class="footer__text footer__text--contact" href="tel:+48111111111">
+                +48 111 111 111</a
               >
             </address>
           </div>
           <div class="footer__item footer__item--center">
-            <p class="footer-social-links--title">DOŁĄCZ DO NAS</p>
-            <div class="footer-social-links__content">
-              <div class="icon-social icon-social--footer">
+            <h3 class="footer__title">DOŁĄCZ DO NAS</h3>
+            <div class="footer__social-icons-container">
+              <div class="footer__social-icon">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </div>
-              <div class="icon-social icon-social--footer">
+              <div class="footer__social-icon">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </div>
-              <div class="icon-social icon-social--footer">
+              <div class="footer__social-icon">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </div>
-              <div class="icon-social icon-social--footer">
+              <div class="footer__social-icon">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -393,8 +395,8 @@
             </div>
           </div>
           <form class="footer__item footer__item--center">
-            <p class="footer-social-links--title">ZAPISZ SIĘ DO NEWSLETTERA</p>
-            <div class="footer-newsletter__content">
+            <h3 class="footer__title">ZAPISZ SIĘ DO NEWSLETTERA</h3>
+            <div class="footer__newsletter-form">
               <input
                 class="footer__input-field footer__input-field__placeholder"
                 id="newsletter-email"
@@ -402,7 +404,7 @@
                 type="text"
                 placeholder="E-mail"
               />
-              <button class="button__primary button__primary--newsletter" type="submit">
+              <button class="footer__button" type="submit">
                 Zapisz się
                 <svg width="24px" height="24px">
                   <use href="./images/icons.svg#icon-icon-send"></use>
@@ -424,14 +426,14 @@
           </button>
         </div>
 
-        <div class="modal__contact-form">
-          <h2 class="contact-form__header">Zostaw swoje dane w formularzu poniżej</h2>
-          <form class="contact-form">
+        <div class="contact-form">
+          <h2 class="contact-form__tittle">Zostaw swoje dane w formularzu poniżej</h2>
+          <form class="contact-form__body">
             <!-- Input Field -->
             <div class="contact-form__item">
               <label class="contact-form__label" for="client-name"> Imię</label>
-              <div class="contact-form__input-field__container">
-                <div class="contact-form__input-field__icon">
+              <div class="contact-form__input-container">
+                <div class="contact-form__icon">
                   <svg width="12px" height="12px">
                     <use href="./images/icons.svg#icon-person-modal"></use>
                   </svg>
@@ -449,8 +451,8 @@
             <!-- Input Field -->
             <div class="contact-form__item">
               <label class="contact-form__label" for="client-phone-number"> Telefon</label>
-              <div class="contact-form__input-field__container">
-                <div class="contact-form__input-field__icon">
+              <div class="contact-form__input-container">
+                <div class="contact-form__icon">
                   <svg width="12px" height="12px">
                     <use href="./images/icons.svg#icon-phone-modal"></use>
                   </svg>
@@ -468,8 +470,8 @@
             <!-- Input Field -->
             <div class="contact-form__item">
               <label class="contact-form__label" for="client-email"> E-mail</label>
-              <div class="contact-form__input-field__container">
-                <div class="contact-form__input-field__icon">
+              <div class="contact-form__input-container">
+                <div class="contact-form__icon">
                   <svg width="12px" height="12px">
                     <use href="./images/icons.svg#icon-mail-modal"></use>
                   </svg>
@@ -487,9 +489,9 @@
             <!-- Input Field Comment-->
             <div class="contact-form__item">
               <label class="contact-form__label" for="client-comment"> Komentarz</label>
-              <div class="contact-form__input-field__container">
+              <div class="contact-form__input-container">
                 <textarea
-                  class="contact-form__input-field contact-form__input-field--comment"
+                  class="contact-form__input-field-comment"
                   name="client-comment"
                   id="client-comment"
                   rows="3"
@@ -500,28 +502,21 @@
             <!-- Input Field End -->
           </form>
         </div>
+        <div class="custom-checkbox">
+          <label class="checkbox" for="checkbox-1">
+            <input class="checkbox__input" id="checkbox-1" name="checkbox" type="checkbox" />
+            <svg class="checkbox__icon" width="11px" height="8px">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
 
-        <div class="modal__terms__container">
-          <div class="modal__terms__content">
-            <!-- Terms and Conditions -->
-            <label for="checkbox-1"
-              ><p class="terms__text">
-                Oświadczam iż akceptuję
-                <span class="terms__text terms__text--underline"> Regulamin</span> i
-                <span class="terms__text terms__text--underline">Politykę Prywatności.</span>
-              </p>
-            </label>
-            <div class="check">
-              <input class="checkbox" id="checkbox-1" name="checkbox" type="checkbox" />
-              <svg class="check-icon" width="11px" height="8px">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
+            <div>
+              <span class="checkbox__text">Oświadczam iż akceptuję</span>
+              <span class="checkbox__text checkbox__text--link">Regulamin</span>
+              <span class="checkbox__text"> i</span>
+              <span class="checkbox__text checkbox__text--link"> Politykę Prywatności</span>
             </div>
-          </div>
-          <!-- Terms and Conditions END -->
-          <button class="button__primary button__primary--contact-form" type="submit">
-            Wyślij
-          </button>
+          </label>
+          <button class="custom-checkbox__button" type="submit">Wyślij</button>
         </div>
       </div>
     </div>
