@@ -1,18 +1,17 @@
 @import '../utils/vars';
 
 .navigation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .navigation__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+
+  &__item {
     list-style: none;
   }
-  
-  .navigation__link {
+
+  &__link {
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -20,13 +19,14 @@
     color: $primaryText;
     letter-spacing: 0.02em;
   }
-  
-  .navigation__link--active {
-    border-radius: 2px;
-    position: absolute;
-  }
-  
-  .navigation__link--active::after {
+}
+.navigation__link--active {
+  border-radius: 2px;
+  position: absolute;
+}
+
+.navigation__link--active {
+  &::after {
     content: '';
     border-radius: 2px;
     width: 53px;
@@ -34,56 +34,12 @@
     background-color: $hover;
     position: absolute;
     top: 28px;
- 
   }
-  
-  .navigation__link:hover,
-  .navigation__link:focus {
+}
+.navigation__link {
+  &:hover,
+  &:focus {
     color: $hover;
     transition: $transition-cubic;
   }
-
-  
-  .contact-links {
-    margin-left: auto;
-    display: flex;
-    gap: 50px;
-  }
-  
-  .contact-links__item {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    cursor: pointer;
-    fill: $secondaryTextGray;
-  }
-  
-  .contact-links__link {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    color: $secondaryTextGray;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-  }
-  
-  .contact-links__link:hover,
-  .contact-links__link:focus {
-    color: $hover;
-    transition: $transition-cubic;
-    fill: $hover;
-  }
-  
-  .contact-links__icon:hover,
-  .contact-links__icon:focus {
-    fill: $hover;
-    transition: $transition-cubic;
-  }
-  
-  .contact-links__item:hover,
-  .contact-links__item:focus {
-    fill: #2196f3;
-    color: #2196f3;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}

@@ -2,15 +2,16 @@
 
 .filters-section {
   padding-top: 94px;
-}
-.filters-section__content {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
 
-.filters-section__item {
-  list-style: none;
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &__item {
+    list-style: none;
+  }
 }
 
 .filters-section__button {
@@ -27,9 +28,11 @@
   border-radius: 4px;
 }
 
-.filters-section__button:hover {
-  background-color: $filtersButtonHover;
-  color: $filtersButtonTextColorHover;
-  box-shadow: $filtersButtonShadowHover;
-  transition: $transition-cubic;
+.filters-section__button {
+  &:hover {
+    background-color: $filtersButtonHover;
+    color: $filtersButtonTextColorHover;
+    box-shadow: $filtersButtonShadowHover;
+    transition: $transition-cubic;
+  }
 }

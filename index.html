@@ -11,10 +11,10 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container">
         <div class="header__content">
-          <a class="header__logo" href="index.html"
-            ><span class="header__logo header__logo--accent">Web</span>Studio</a
+          <a class="logo" href="index.html"
+            >Web<span class="logo logo--header">Studio</span></a
           >
           <nav>
             <ul class="navigation">
@@ -59,7 +59,7 @@
       </section>
 
       <section class="section">
-        <div class="container">
+        <div class="section__container">
           <ul class="section__content">
             <li class="section__item">
               <figure class="card">
@@ -352,11 +352,11 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container">
         <div class="footer__content">
           <div class="footer__item">
-            <a class="footer__logo" href="index.html"
-              ><span class="footer__logo-accent">Web</span>Studio</a
+            <a class="logo" href="index.html"
+              >Web<span class="logo logo--footer">Studio</span></a
             >
             <address class="footer__adress-column">
               <p class="footer__text">m. Warszawa, Aleje Jerozolimskie 21</p>
@@ -418,7 +418,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="modal__button">
+        <div class="modal__button-contaier">
           <button type="button" class="modal__close-button" data-modal-close>
             <svg width="11px" height="11px">
               <use href="./images/icons.svg#icon-close"></use>
@@ -491,7 +491,7 @@
               <label class="contact-form__label" for="client-comment"> Komentarz</label>
               <div class="contact-form__input-container">
                 <textarea
-                  class="contact-form__input-field-comment"
+                  class="contact-form__input-field contact-form__input-field--comment"
                   name="client-comment"
                   id="client-comment"
                   rows="3"
