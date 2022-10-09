@@ -8,6 +8,13 @@
     @extend .container;
   }
 }
+
+.section--gray-background {
+  @extend .section;
+  background-color: $sectionSecondaryBackground;
+  padding-bottom: 94px;
+}
+
 .section__content {
   display: flex;
   flex-direction: row;
@@ -33,12 +40,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
-}
-
-.section--gray-background {
-  @extend .section;
-  background-color: $sectionSecondaryBackground;
-  padding-bottom: 94px;
 }
 
 .section__client-icon {
