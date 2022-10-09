@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap';
-@import '../css/modern-normalize.css';
+@import './modern-normalize.css';
 h1,
 h2,
 h3,
